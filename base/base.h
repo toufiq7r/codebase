@@ -1,6 +1,8 @@
 #ifndef BASE_H
 #define BASE_H
 
+#include <types.h>
+
 // NOTE(Toufiq): Context Cracking
 #if defined(__clang__)
 #   define COMPILER_CLANG 1
