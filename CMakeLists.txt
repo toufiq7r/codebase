@@ -12,3 +12,8 @@ set(BASE_DIR ${CMAKE_SOURCE_DIR}/base)
 include(CPack)
 
 target_include_directories(codebase PRIVATE ${BASE_DIR})
+
+option(ENABLE_ASSERT "Enable assertions" ON)
+if(ENABLE_ASSERT)
+    add_compile_definitions(ENABLE_ASSERT)
+endif()
